@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="18.33dp"
+    android:paddingRight="18.33dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="41.67dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                style="@style/textStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="firstName"
+                android:id="@+id/firstName"
+                android:layout_marginRight="10dp"
+                android:text="a" />
+
+            <EditText
+                style="@style/textStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="lastName"
+                android:id="@+id/lastName"
+                android:text="a" />
+        </LinearLayout>
+
+        <EditText
+            style="@style/textStyle"
+            android:hint="mail"
+            android:id="@+id/mail"
+            android:layout_marginTop="11.67dp"
+            android:inputType="textEmailAddress"
+            android:text="a@a.com" />
+
+        <EditText
+            style="@style/textStyle"
+            android:hint="city"
+            android:id="@+id/city"
+            android:layout_marginTop="11.67dp"
+            android:text="a" />
+
+        <EditText
+            style="@style/textStyle"
+            android:hint="password1"
+            android:id="@+id/password1"
+            android:layout_marginTop="11.67dp"
+            android:inputType="textPassword"
+            android:text="aaaaaa" />
+
+        <EditText
+            style="@style/textStyle"
+            android:hint="password2"
+            android:id="@+id/password2"
+            android:layout_marginTop="11.67dp"
+            android:inputType="textPassword"
+            android:text="aaaaaa" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11.67dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/check"
+                android:src="@drawable/btn_round" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="i have read and agreed to this turms and condisions"
+                android:id="@+id/terms"
+                android:layout_marginLeft="30dp"
+                android:textSize="11sp"
+                android:textColor="#ffff0f00" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/textStyle"
+            android:text="continue"
+            android:id="@+id/login"
+            android:background="@drawable/continue_bg"
+            android:layout_marginTop="11.67dp"
+            android:gravity="center"
+            android:textColor="#ffffffff" />
+
+    </LinearLayout>
+
+</RelativeLayout>
